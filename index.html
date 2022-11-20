@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER PART -->
+  <header>
+    <nav>
+      <div class="hamburger-menu">
+        <img class="open-menu-icon menu-icons" src="./images/icon-menu.svg" alt="">
+        <img class="close-menu-icon none menu-icons" src="./images/icon-close.svg" alt="">
+      </div>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="">
+      </div>
+
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="" class="nav-link">
+            Collections</a>
+        </li>
+        <li class="nav-li">
+          <a href="" class="nav-link">
+            Men</a>
+        </li>
+        <li class="nav-li">
+          <a href="" class="nav-link">
+            Women</a>
+        </li>
+        <li class="nav-li">
+          <a href="" class="nav-link">
+            About</a>
+        </li>
+        <li class="nav-li">
+          <a href="" class="nav-link">
+            Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="cart-section">
+      <div class="cart-img">
+        <div class="totalItemsNumber none">
+          0
+        </div>
+        <img src="./images/icon-cart.svg" alt="">
+
+      </div>
+      <div class="user-profile">
+        <img src="./images/image-avatar.png" alt="">
+      </div>
+
+    </div>
+    <div class="total-cart-items none">
+      <h2 class="cart-heading">Cart</h2>
+
+      <h2 class="cart-total">Your cart is empty</h2>
+      <div class="cartItems-container none">
+        <div class="cartItem-img">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        </div>
+        <div class="cartItems-data">
+          <p class="para">
+            Fall Limited Edition Sneakers
+          </p>
+          <p class="para">$125.00 x <span class="total-item-span">3</span><span class="total-calculated-amount">
+              $375.00</span></p>
+        </div>
+        <div class="deleteIcon">
+          <img src="./images/icon-delete.svg" alt="">
+        </div>
+      </div>
+      <button class="checkOut-btn add-cart-btn none">
+        Checkout
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN PART -->
+
+  <main>
+    <div class="left-section">
+      <figure class="showing-product-image">
+        <img src="./images/image-product-1.jpg" alt="" class="product-img">
+      </figure>
+      <div class="product-option-img">
+        <div class="product-img-list active">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        </div>
+        <div class="product-img-list">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="">
+        </div>
+        <div class="product-img-list">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="">
+        </div>
+        <div class="product-img-list">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <h3 class="company-name">
+
+        Sneaker Company
+      </h3>
+      <h1 class="main-heading">
+
+        Fall Limited Edition Sneakers
+      </h1>
+      <p class="para">
+
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div class="showing-cost">
+        <h2 class="real-cost">
+          $125.00</h2>
+        <h3 class="discount">
+
+          50%
+        </h3>
+      </div>
+      <div class="cancel-cost">
+
+        $250.00
+      </div>
+      <div class="add-to-cart-section">
+        <div class="add-items">
+          <img src="./images/icon-minus.svg" alt="" class="minus-icon">
+          <p class="total-selected-item">
+            0</p>
+          <img src="./images/icon-plus.svg" alt="" class="plus-icon">
+        </div>
+        <button class="add-cart-btn"><img src="./images/icon-cart.svg" alt="">
+          Add to cart </button>
+      </div>
+    </div>
+
+    <!-- IMAGE CROUSEL SECTION  -->
+
+    <div class="image-crousel-section none">
+      <div class="cancel-btn"><img src="./images/icon-close.svg" alt=""></div>
+      <div class="crousel-image-container">
+        <div class="previous-icon">
+          <img src="./images/icon-previous.svg" alt="">
+        </div>
+        <div class="next-icon">
+          <img src="./images/icon-next.svg" alt="">
+        </div>
+        <figure class="showing-crousel-image">
+          <img src="./images/image-product-1.jpg" alt="" class="product-crousel-img product-img">
+        </figure>
+        <figure class="showing-crousel-image">
+          <img src="./images/image-product-2.jpg" alt="" class="product-crousel-img product-img">
+        </figure>
+        <figure class="showing-crousel-image">
+          <img src="./images/image-product-3.jpg" alt="" class="product-crousel-img product-img">
+        </figure>
+        <figure class="showing-crousel-image">
+          <img src="./images/image-product-4.jpg" alt="" class="product-crousel-img product-img">
+        </figure>
+      </div>
+      <div class="product-option-img">
+        <div class="product-img-list crousel-image-list">
+          <img onclick="currentSlide(1)" src="./images/image-product-1-thumbnail.jpg" alt="">
+        </div>
+        <div class="product-img-list crousel-image-list">
+          <img onclick="currentSlide(2)" src="./images/image-product-2-thumbnail.jpg" alt="">
+        </div>
+        <div class="product-img-list crousel-image-list">
+          <img onclick="currentSlide(3)" src="./images/image-product-3-thumbnail.jpg" alt="">
+        </div>
+        <div class="product-img-list crousel-image-list">
+          <img onclick="currentSlide(4)" src="./images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
